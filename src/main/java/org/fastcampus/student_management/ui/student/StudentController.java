@@ -39,9 +39,9 @@ public class StudentController {
   }
 
   public void activateStudent() {
-    String name = getStudentName();
-    studentService.activateStudent(name);
-    studentPresenter.showStudentActivated();
+    String name = getStudentName(); // Controller에서 학생 이름을 받고
+    studentService.activateStudent(name); // Service Layer에서 비즈니스 로직 수
+    studentPresenter.showStudentActivated(); // 결과값 반환
   }
 
   public void deactivateStudent() {
